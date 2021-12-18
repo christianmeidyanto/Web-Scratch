@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+      @media (min-width: 0px) {
+        p {
+          margin-top: 4rem;
+          font-size: 0.9rem;
+        }
+        .text-about {
+          padding-top:12px;
+          text-align: center;
+        }
+        .pc {
+          margin-top: 5rem;
+        }
+        .info {
+          margin-top: 1rem;
+        }
+        .text{
+          text-align :left;
+        }
+      }
+      @media (min-width: 1000px) {
+        .text{
+          text-align :left;
+        }
+      }
+      @media (min-width: 1200px) {
+        p {
+          margin-top: 4rem;
+          font-size: 0.9rem;
+        }
+        .text-about {
+          text-align: left;
+        }
+        .pc{
+          margin-top:-0.5rem;
+        }
+        .info {
+          margin-top: 1rem;
+        }
+        .text{
+          text-align :right;
+        }
+      }
+      .fade{
+        margin-top:10px;
+        transition: 10s fade-in;
+      }
+      /* img {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        animation-name: example;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes example {
+        0% {
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          left: 200px;
+        }
+        100% {
+          left: 0px;
+          top: 0px;
+        }
+      } */
+    </style>
+
+    <title>Hello, world!</title>
+  </head>
+  <body onscroll="scroll" id="scroll">
+    <header>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active rounded-circle"
+            aria-current="true"
+            aria-label="Slide 1"
+            style="width: 10px; height: 10px"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            style="width: 10px; height: 10px"
+            class="rounded-circle"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            style="width: 10px; height: 10px"
+            class="rounded-circle"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://eljabar.com/wp-content/uploads/2020/10/Dikeluhkan-Warga-Limbah-Pabrik-PT-Saku-Mas-Jaya-Cemari-Lingkungan-700x350.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="margin-bottom:-50px;">First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://eljabar.com/wp-content/uploads/2020/10/Dikeluhkan-Warga-Limbah-Pabrik-PT-Saku-Mas-Jaya-Cemari-Lingkungan-700x350.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="margin-bottom:-50px;">Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://eljabar.com/wp-content/uploads/2020/10/Dikeluhkan-Warga-Limbah-Pabrik-PT-Saku-Mas-Jaya-Cemari-Lingkungan-700x350.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="margin-bottom:-50px;">Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-none"
+        id="nav"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNqDi16lru2xnQaN_z9bgXK_Osl963-UKYq2K6&s=0"
+              alt=""
+              style="width: 50px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#product">Product</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="about"><br>
+      <div class="container"><br><br>
+          <div class="row my-5 p-5">
+            <div class="col-xl-6">
+              <img
+              src="https://eljabar.com/wp-content/uploads/2020/10/Dikeluhkan-Warga-Limbah-Pabrik-PT-Saku-Mas-Jaya-Cemari-Lingkungan-700x350.jpg"
+              class="img-thumbnail"
+              alt="..."
+              />
+          </div>
+          <div class="col-xl-6 mx-auto text-about">
+            <p style="margin-top:1px;">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
+              expedita quia harum suscipit dignissimos incidunt, deleniti nulla.
+              Tempora, facilis? Illum, ratione maxime ullam facilis provident
+              molestiae corrupti possimus consequatur asperiores quo ut corporis
+              nostrum dolorum impedit eligendi perspiciatis, praesentium cum
+              doloribus, esse nemo alias itaque labore! Praesentium dolorum
+              magni qui sed.
+              <span id="more" class="d-none">
+                <br>
+                Ipsum sequi quo quibusdam distinctio inventore nostrum
+                necessitatibus maiores voluptatum vel voluptates velit
+                recusandae vero unde, rerum quae eveniet quod? Eius praesentium
+                corrupti quidem delectus, cupiditate reiciendis facilis porro
+                quo, excepturi blanditiis magni animi? In voluptate delectus
+                rerum officiis alias optio provident illum. Omnis rerum harum
+                suscipit odio magni.
+              </span>
+            </p>
+            <button
+              type="button"
+              id="seeAbout"
+              class="btn btn-outline-primary my-3"
+              >
+              See More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="product">
+      <!-- <img src="https://dummyimage.com/200x200/767878/fff" alt="" /> -->
+      <div class="container p-5">
+        <br><br><br><br>
+        <h4 class="my-5">Product</h4>
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="d-flex flex-wrap justify-content-around my-5">
+              <div class="card" style="width: 13rem;height:13rem;">
+                <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 1">
+                  <img src="https://dummyimage.com/200x200/767878/fff" class="card-img-top"  alt="...">
+                </a>
+              </div>
+              <div class="card" style="width: 13rem;height:13rem;">
+                <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 2">
+                  <img src="https://dummyimage.com/200x200/767878/fff" class="card-img-top"  alt="...">
+                </a>
+              </div>
+              <div class="card" style="width: 13rem;height:13rem;">
+                <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 3">
+                  <img src="https://dummyimage.com/200x200/767878/fff" class="card-img-top"  alt="...">
+                </a>
+              </div>
+              <div class="card" style="width: 13rem;height:13rem;">
+                <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 4">
+                  <img src="https://dummyimage.com/200x200/767878/fff" class="card-img-top"  alt="...">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="gallery">
+      <div class="container my-5 p-5">
+        <br/>
+        <h4 class="my-5">Gallery</h4>
+        <div class="d-flex flex-wrap justify-content-around my-5">
+          <div class="card" style="width: 13rem;height:13rem;">
+            <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 1">
+              <img src="https://dummyimage.com/200x200/767878/fff" class="card-img-top"  alt="...">
+            </a>
+          </div>
+          <div class="card" style="width: 13rem;height:13rem;">
+            <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 2">
+              <img src="https://dummyimage.com/200x200/767878/fff" class="card-img-top"  alt="...">
+            </a>
+          </div>
+          <div class="card" style="width: 13rem;height:13rem;">
+            <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 3">
+              <img src="https://dummyimage.com/200x200/767878/fff" class="card-img-top"  alt="...">
+            </a>
+          </div>
+          <div class="card" style="width: 13rem;height:13rem;">
+            <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 4">
+              <img src="https://dummyimage.com/200x200/767878/fff" class="card-img-top"  alt="...">
+            </a>
+          </div>
+        </div>
+        <button type="button" class="btn btn-outline-primary">
+          See More
+        </button>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container p-5">
+        <h4>Get <span class="text-info">Info</span></h4>
+        <div class="row">
+          <div class="col-xl-7 col-lg-67 col-md-7 col-sm-7 lh-lg info" id="info1">
+            Head Office <br />
+            Jl. Caringin No. 439M 
+            Kota Bandung <br />Jawa Barat 40224 <br />
+            Phone:<br />&nbsp;021 - 5631528 - 29 <br />&nbsp;021 - 5656861 - 62
+            <br />Fax: <br />&nbsp;021 - 5660 223  <br /><i
+              class="fas fa-envelope fa-fw"
+            ></i>
+            <a
+              href="mailto:sakumas23@gmail.com"
+              class="text-decoration-none text-dark"
+              >sakumas23@gmail.com</a
+            >
+          </div>
+          <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pc" id="info2">
+            <div class="mb-3">
+              <h5 class="pb-4 text">Send Me Something</h4>
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="email@gmail.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="text-email" class="form-label">Your Message</label>
+              <textarea
+                class="form-control lh-lg"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Send me something you want know !!"
+              ></textarea>
+            </div>
+              
+            </button>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+            <i class="far fa-paper-plane fa-fw"></i> Send
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Notice
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">Thank you for sending message</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container-fluid bg-primary text-center text-white p-5">
+        Copyright © PT SAKU MAS JAYA - Flexible Packaging Manufacture. All Right
+        Reserved.
+      </div>
+    </footer>
+    <button type="button" class="btn btn-warning" style="position:fixed; margin-top:auto; z-index:99999;" onclick="backTotop()">
+      TOP
+    </button>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    let nav = document.querySelector('.navbar');
+    let btnmore=document.getElementById('seeAbout');
+    $('#seeAbout').click(function () {
+      $('#more').toggleClass('d-none');
+      if($('#more').hasClass('d-none'))
+        btnmore.innerHTML ="Read More";
+        else
+        btnmore.innerHTML ="Less More";
+    });
+    
+    // if($( window ).width()<=999){
+    //   $("#info1").removeClass(".col-xl-7 .col-lg-7 .col-md-7 .col-sm-7").addClass(".col-xl-12 .col-lg-12 .col-md-12 .col-sm-12");
+    //   $("#info2").removeClass("col-xl-5 col-lg-5 col-md-5 col-sm-5").addClass("col-xl-12 col-lg-12 col-md-12 col-sm-12");
+    // }
+      // if(window.scrollY<=500){
+      //   // console.log(window.scrollY);
+      // }else if(window.scrollY>500){
+      //   $("#nav").removeClass("d-none");
+      // } else if(window.scrollY>=1000){
+      //   $("#nav").removeClass("d-none");
+      // }
+      $(document).ready(function(){
+ 
+      $(window).scroll(function(){
+ 
+       var position = $(window).scrollTop();
+       var widthwindow =$(window).width();
+      //  if(widthwindow>900){
+      //    if( position <= 500 ){
+      //     $("#nav").addClass("d-none");
+      //   }else if(position > 500){
+      //     $("#nav").removeClass("d-none");
+      //   }
+      //  }else if(widthwindow<=500){
+      //   if( position <= 200 ){
+      //     $("#nav").addClass("d-none");
+      //   }else if(position > 200){
+      //     $("#nav").removeClass("d-none");
+      //   }
+      //  }else{
+      //   if( position <= 500 ){
+      //     $("#nav").addClass("d-none");
+      //   }else if(position > 500){
+      //     $("#nav").removeClass("d-none");
+      //   }
+      //  }
+
+      if(widthwindow>=1200){
+        if( position <= 550 ){
+          $("#nav").addClass("d-none");
+        }else if(position > 550){
+          $("#nav").removeClass("d-none");
+        }
+        $("#info1").removeClass("col-xl-12 col-lg-12 col-md-12 col-sm-12").addClass("col-xl-7 col-lg-7 col-md-7 col-sm-7");
+        $("#info2").removeClass("col-xl-12 col-lg-12 col-md-12 col-sm-12").addClass("col-xl-5 col-lg-5 col-md-5 col-sm-5");
+      }
+      else if(widthwindow >=992){
+        if( position <= 450 ){
+          $("#nav").addClass("d-none");
+        }else if(position > 450){
+          $("#nav").removeClass("d-none");
+        }
+        $("#info1").removeClass("col-xl-7 col-lg-7 col-md-7 col-sm-7").addClass("col-xl-12 col-lg-12 col-md-12 col-sm-12");
+        $("#info2").removeClass("col-xl-5 col-lg-5 col-md-5 col-sm-5").addClass("col-xl-12 col-lg-12 col-md-12 col-sm-12");
+      }
+      else if(widthwindow>=768){
+        if( position <= 380 ){
+          $("#nav").addClass("d-none");
+        }else if(position > 380){
+          $("#nav").removeClass("d-none");
+        }
+      }else if(widthwindow >=576){
+        if( position <= 300 ){
+          $("#nav").addClass("d-none");
+        }else if(position > 300){
+          $("#nav").removeClass("d-none");
+        }
+        $("#info1").removeClass("col-xl-7 col-lg-7 col-md-7 col-sm-7").addClass("col-xl-12 col-lg-12 col-md-12 col-sm-12");
+        $("#info2").removeClass("col-xl-5 col-lg-5 col-md-5 col-sm-5").addClass("col-xl-12 col-lg-12 col-md-12 col-sm-12");
+      }
+      else if(widthwindow<576){
+        if( position <= 250 ){
+          $("#nav").addClass("d-none");
+        }else if(position > 250){
+          $("#nav").removeClass("d-none");
+        }
+      }
+
+      });
+    });
+    function backTotop(){
+      window.scroll(0, 0);
+    }
+  </script>
+</html>
