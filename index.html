@@ -66,38 +66,33 @@
         margin-top:10px;
         transition: 10s fade-in;
       }
-      /* img {
-        width: 100px;
-        height: 100px;
-        position: relative;
-        animation-name: example;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
+
+      .img-hover-zoom {
+        height: 250px;
+        overflow: hidden;
       }
 
-      @keyframes example {
-        0% {
-          left: 0px;
-          top: 0px;
-        }
-        25% {
-          left: 200px;
-          top: 0px;
-        }
-        50% {
-          left: 200px;
-        }
-        100% {
-          left: 0px;
-          top: 0px;
-        }
-      } */
-    </style>
+      .img-hover-zoom img {
+        transition: transform .5s ease;
+      }
 
-    <title>Web Scratch</title>
+      .img-hover-zoom:hover img {
+        transform: scale(1.5);
+      }
+    </style>
+    <link
+    rel="icon"
+    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNqDi16lru2xnQaN_z9bgXK_Osl963-UKYq2K6&s=0"
+    type="image/x-icon"
+    sizes="16x16"
+    />
+    <title>Web Scratch PT SAKU MAS JAYA</title>
   </head>
-  <body onscroll="scroll" id="scroll">
+  <body>
+
+    <!-- Header -->
     <header>
+      <!-- Slider Carousel -->
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
@@ -190,6 +185,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <!-- Navbar -->
       <nav
         class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-none"
         id="nav"
@@ -224,19 +220,21 @@
         </div>
       </nav>
     </header>
-    <section id="about"><br>
+
+    <!-- Section About -->
+    <section id="about">
       <div class="container"><br><br>
-          <div class="row my-5 p-5">
+        <div class="row my-5 p-5">
             <div class="col-xl-6">
-              <img
-              src="https://eljabar.com/wp-content/uploads/2020/10/Dikeluhkan-Warga-Limbah-Pabrik-PT-Saku-Mas-Jaya-Cemari-Lingkungan-700x350.jpg"
+            <img
+            src="https://eljabar.com/wp-content/uploads/2020/10/Dikeluhkan-Warga-Limbah-Pabrik-PT-Saku-Mas-Jaya-Cemari-Lingkungan-700x350.jpg"
               class="img-thumbnail"
               alt="..."
               />
           </div>
           <div class="col-xl-6 mx-auto text-about">
             <p style="margin-top:1px;">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
               expedita quia harum suscipit dignissimos incidunt, deleniti nulla.
               Tempora, facilis? Illum, ratione maxime ullam facilis provident
               molestiae corrupti possimus consequatur asperiores quo ut corporis
@@ -244,10 +242,10 @@
               doloribus, esse nemo alias itaque labore! Praesentium dolorum
               magni qui sed.
               <span id="more" class="d-none">
-                <br>
-                Ipsum sequi quo quibusdam distinctio inventore nostrum
-                necessitatibus maiores voluptatum vel voluptates velit
-                recusandae vero unde, rerum quae eveniet quod? Eius praesentium
+              <br>
+              Ipsum sequi quo quibusdam distinctio inventore nostrum
+              necessitatibus maiores voluptatum vel voluptates velit
+              recusandae vero unde, rerum quae eveniet quod? Eius praesentium
                 corrupti quidem delectus, cupiditate reiciendis facilis porro
                 quo, excepturi blanditiis magni animi? In voluptate delectus
                 rerum officiis alias optio provident illum. Omnis rerum harum
@@ -265,32 +263,34 @@
         </div>
       </div>
     </section>
+    
+    <!-- Section Product -->
     <section id="product">
       <!-- <img src="https://dummyimage.com/200x200/767878/fff" alt="" /> -->
       <div class="container p-5">
-        <br><br><br><br>
+        <br><br>
         <h4 class="my-5">Product</h4>
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-            <div class="d-flex flex-wrap justify-content-around my-5">
-              <div class="card" style="width: 13rem;height:13rem;">
-                <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 1">
-                  <img src="https://dummyimage.com/200x200/767878/fff" class="card-img-top"  alt="...">
+          <div class="d-flex flex-wrap justify-content-around my-5">
+              <div class="card" style="width: 15rem;height:15rem;">
+              <a href="detailproduct.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 1">
+                  <img src="https://dummyimage.com/350x350/767878/fff" class="card-img-top"  alt="...">
                 </a>
               </div>
-              <div class="card" style="width: 13rem;height:13rem;">
+              <div class="card" style="width: 15rem;height:15rem;">
                 <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 2">
-                  <img src="https://dummyimage.com/200x200/767878/fff" class="card-img-top"  alt="...">
+                  <img src="https://dummyimage.com/350x350/767878/fff" class="card-img-top"  alt="...">
                 </a>
               </div>
-              <div class="card" style="width: 13rem;height:13rem;">
+              <div class="card" style="width: 15rem;height:15rem;">
                 <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 3">
-                  <img src="https://dummyimage.com/200x200/767878/fff" class="card-img-top"  alt="...">
+                  <img src="https://dummyimage.com/350x350/767878/fff" class="card-img-top"  alt="...">
                 </a>
               </div>
-              <div class="card" style="width: 13rem;height:13rem;">
+              <div class="card" style="width: 15rem;height:15rem;">
                 <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 4">
-                  <img src="https://dummyimage.com/200x200/767878/fff" class="card-img-top"  alt="...">
+                  <img src="https://dummyimage.com/350x350/767878/fff" class="card-img-top"  alt="...">
                 </a>
               </div>
             </div>
@@ -298,37 +298,33 @@
         </div>
       </div>
     </section>
+
+    <!-- Section Gallery -->
     <section id="gallery">
       <div class="container my-5 p-5">
         <br/>
         <h4 class="my-5">Gallery</h4>
-        <div class="d-flex flex-wrap justify-content-around my-5">
-          <div class="card" style="width: 13rem;height:13rem;">
-            <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 1">
-              <img src="https://dummyimage.com/200x200/767878/fff" class="card-img-top"  alt="...">
-            </a>
-          </div>
-          <div class="card" style="width: 13rem;height:13rem;">
-            <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 2">
-              <img src="https://dummyimage.com/200x200/767878/fff" class="card-img-top"  alt="...">
-            </a>
-          </div>
-          <div class="card" style="width: 13rem;height:13rem;">
-            <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 3">
-              <img src="https://dummyimage.com/200x200/767878/fff" class="card-img-top"  alt="...">
-            </a>
-          </div>
-          <div class="card" style="width: 13rem;height:13rem;">
-            <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 4">
-              <img src="https://dummyimage.com/200x200/767878/fff" class="card-img-top"  alt="...">
-            </a>
-          </div>
+        <div class="d-flex d-flex justify-content-xl-between p-2">
+        <div class="img-hover-zoom img-hover-zoom--xyz">
+          <img src="https://dummyimage.com/250x250/767878/fff" alt="Another Image zoom-on-hover effect" class="img-hover-zoom">
+        </div>
+        <div class="img-hover-zoom img-hover-zoom--xyz">
+          <img src="https://dummyimage.com/250x250/767878/fff" alt="Another Image zoom-on-hover effect" class="img-hover-zoom">
+        </div>
+        <div class="img-hover-zoom img-hover-zoom--xyz">
+          <img src="https://dummyimage.com/250x250/767878/fff" alt="Another Image zoom-on-hover effect" class="img-hover-zoom">
+        </div>
+        <div class="img-hover-zoom img-hover-zoom--xyz">
+          <img src="https://dummyimage.com/250x250/767878/fff" alt="Another Image zoom-on-hover effect" class="img-hover-zoom">
+        </div>
         </div>
         <button type="button" class="btn btn-outline-primary">
           See More
         </button>
       </div>
     </section>
+
+    <!-- Section Contact -->
     <section id="contact">
       <div class="container p-5">
         <h4>Get <span class="text-info">Info</span></h4>
@@ -419,6 +415,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
     <footer>
       <div class="container-fluid bg-primary text-center text-white p-5">
         Copyright © PT SAKU MAS JAYA - Flexible Packaging Manufacture. All Right
@@ -435,99 +433,5 @@
     ></script>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-    let nav = document.querySelector('.navbar');
-    let btnmore=document.getElementById('seeAbout');
-    $('#seeAbout').click(function () {
-      $('#more').toggleClass('d-none');
-      if($('#more').hasClass('d-none'))
-        btnmore.innerHTML ="Read More";
-        else
-        btnmore.innerHTML ="Less More";
-    });
-    
-    // if($( window ).width()<=999){
-    //   $("#info1").removeClass(".col-xl-7 .col-lg-7 .col-md-7 .col-sm-7").addClass(".col-xl-12 .col-lg-12 .col-md-12 .col-sm-12");
-    //   $("#info2").removeClass("col-xl-5 col-lg-5 col-md-5 col-sm-5").addClass("col-xl-12 col-lg-12 col-md-12 col-sm-12");
-    // }
-      // if(window.scrollY<=500){
-      //   // console.log(window.scrollY);
-      // }else if(window.scrollY>500){
-      //   $("#nav").removeClass("d-none");
-      // } else if(window.scrollY>=1000){
-      //   $("#nav").removeClass("d-none");
-      // }
-      $(document).ready(function(){
- 
-      $(window).scroll(function(){
- 
-       var position = $(window).scrollTop();
-       var widthwindow =$(window).width();
-      //  if(widthwindow>900){
-      //    if( position <= 500 ){
-      //     $("#nav").addClass("d-none");
-      //   }else if(position > 500){
-      //     $("#nav").removeClass("d-none");
-      //   }
-      //  }else if(widthwindow<=500){
-      //   if( position <= 200 ){
-      //     $("#nav").addClass("d-none");
-      //   }else if(position > 200){
-      //     $("#nav").removeClass("d-none");
-      //   }
-      //  }else{
-      //   if( position <= 500 ){
-      //     $("#nav").addClass("d-none");
-      //   }else if(position > 500){
-      //     $("#nav").removeClass("d-none");
-      //   }
-      //  }
-
-      if(widthwindow>=1200){
-        if( position <= 550 ){
-          $("#nav").addClass("d-none");
-        }else if(position > 550){
-          $("#nav").removeClass("d-none");
-        }
-        $("#info1").removeClass("col-xl-12 col-lg-12 col-md-12 col-sm-12").addClass("col-xl-7 col-lg-7 col-md-7 col-sm-7");
-        $("#info2").removeClass("col-xl-12 col-lg-12 col-md-12 col-sm-12").addClass("col-xl-5 col-lg-5 col-md-5 col-sm-5");
-      }
-      else if(widthwindow >=992){
-        if( position <= 450 ){
-          $("#nav").addClass("d-none");
-        }else if(position > 450){
-          $("#nav").removeClass("d-none");
-        }
-        $("#info1").removeClass("col-xl-7 col-lg-7 col-md-7 col-sm-7").addClass("col-xl-12 col-lg-12 col-md-12 col-sm-12");
-        $("#info2").removeClass("col-xl-5 col-lg-5 col-md-5 col-sm-5").addClass("col-xl-12 col-lg-12 col-md-12 col-sm-12");
-      }
-      else if(widthwindow>=768){
-        if( position <= 380 ){
-          $("#nav").addClass("d-none");
-        }else if(position > 380){
-          $("#nav").removeClass("d-none");
-        }
-      }else if(widthwindow >=576){
-        if( position <= 300 ){
-          $("#nav").addClass("d-none");
-        }else if(position > 300){
-          $("#nav").removeClass("d-none");
-        }
-        $("#info1").removeClass("col-xl-7 col-lg-7 col-md-7 col-sm-7").addClass("col-xl-12 col-lg-12 col-md-12 col-sm-12");
-        $("#info2").removeClass("col-xl-5 col-lg-5 col-md-5 col-sm-5").addClass("col-xl-12 col-lg-12 col-md-12 col-sm-12");
-      }
-      else if(widthwindow<576){
-        if( position <= 250 ){
-          $("#nav").addClass("d-none");
-        }else if(position > 250){
-          $("#nav").removeClass("d-none");
-        }
-      }
-
-      });
-    });
-    function backTotop(){
-      window.scroll(0, 0);
-    }
-  </script>
+  <script src="script.js"></script>
 </html>
