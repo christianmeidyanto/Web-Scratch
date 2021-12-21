@@ -79,6 +79,26 @@
       .img-hover-zoom:hover img {
         transform: scale(1.5);
       }
+
+      .wrapper { 
+        background:#EFEFEF; 
+        box-shadow: 1px 1px 10px #999; 
+        margin: auto; 
+        text-align: center; 
+        position: relative;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        margin-bottom: 20px !important;
+        width: 100%;
+        padding: 5px;
+    }
+    .scrolls { 
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 13rem;
+    white-space:nowrap
+    } 
     </style>
     <link
     rel="icon"
@@ -88,7 +108,7 @@
     />
     <title>Web Scratch PT SAKU MAS JAYA</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="0">
 
     <!-- Header -->
     <header>
@@ -270,7 +290,19 @@
       <div class="container p-5">
         <br><br>
         <h4 class="my-5">Product</h4>
-        <div class="row">
+        <div class="wrapper">
+        <div class="scrolls">
+        <a href=""><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
+        <a href=""><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
+        <a href=""><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
+        <a href=""><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
+        <a href=""><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
+        <a href=""><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
+        </div>
+        </div>
+      
+      </div>
+        <!-- <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
           <div class="d-flex flex-wrap justify-content-around my-5">
               <div class="card" style="width: 15rem;height:15rem;">
@@ -295,8 +327,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div> -->
+        
     </section>
 
     <!-- Section Gallery -->

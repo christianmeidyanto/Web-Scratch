@@ -1,10 +1,14 @@
 let nav = document.querySelector('.navbar');
 let btnmore = document.getElementById('seeAbout');
+
+// See More Button About
 $('#seeAbout').click(function () {
   $('#more').toggleClass('d-none');
   if ($('#more').hasClass('d-none')) btnmore.innerHTML = 'Read More';
   else btnmore.innerHTML = 'Less More';
 });
+
+// Custom Scale CSS when Scrolling
 $(document).ready(function () {
   $(window).scroll(function () {
     var position = $(window).scrollTop();
@@ -41,6 +45,7 @@ $(document).ready(function () {
         $('#nav').removeClass('d-none');
       }
     } else if (widthwindow >= 576) {
+      $('.card-img-top').css('width', '100px');
       if (position <= 300) {
         $('#nav').addClass('d-none');
       } else if (position > 300) {
@@ -53,6 +58,9 @@ $(document).ready(function () {
         .removeClass('col-xl-5 col-lg-5 col-md-5 col-sm-5')
         .addClass('col-xl-12 col-lg-12 col-md-12 col-sm-12');
     } else if (widthwindow < 576) {
+      $('.card-img-top').css('width', '100%');
+      $('.card-product').css('width', '100%');
+      $('.card-title').css('font-size', '15px');
       if (position <= 250) {
         $('#nav').addClass('d-none');
       } else if (position > 250) {
@@ -61,10 +69,13 @@ $(document).ready(function () {
     }
   });
 });
+
+// Back To Top
 function backTotop() {
   window.scroll(0, 0);
 }
 
+// Image Zoom Lens
 function imageZoom(imgID, resultID) {
   var img, lens, result, cx, cy;
   img = document.getElementById(imgID);
