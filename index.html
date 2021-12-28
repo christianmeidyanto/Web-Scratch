@@ -38,6 +38,16 @@
         .text{
           text-align :left;
         }
+        .card {
+        height: 100px;
+        overflow: hidden;
+        }
+        #gallery{
+          text-align:center;
+        }
+        #gallery h4{
+          text-align:left;
+        }
       }
       @media (min-width: 1000px) {
         .text{
@@ -336,19 +346,43 @@
       <div class="container my-5 p-5">
         <br/>
         <h4 class="my-5">Gallery</h4>
-        <div class="d-flex d-flex justify-content-xl-between p-2">
-        <div class="img-hover-zoom img-hover-zoom--xyz">
-          <img src="https://dummyimage.com/250x250/767878/fff" alt="Another Image zoom-on-hover effect" class="img-hover-zoom">
-        </div>
-        <div class="img-hover-zoom img-hover-zoom--xyz">
-          <img src="https://dummyimage.com/250x250/767878/fff" alt="Another Image zoom-on-hover effect" class="img-hover-zoom">
-        </div>
-        <div class="img-hover-zoom img-hover-zoom--xyz">
-          <img src="https://dummyimage.com/250x250/767878/fff" alt="Another Image zoom-on-hover effect" class="img-hover-zoom">
-        </div>
-        <div class="img-hover-zoom img-hover-zoom--xyz">
-          <img src="https://dummyimage.com/250x250/767878/fff" alt="Another Image zoom-on-hover effect" class="img-hover-zoom">
-        </div>
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4">
+    
+            <img src="https://dummyimage.com/250x250/767878/fff" class="img-fluid mb-4" alt="">
+    
+            <img src="https://dummyimage.com/250x250/767878/fff" class="img-fluid mb-4" alt=""
+              data-wow-delay="0.3s">
+    
+          </div>
+          <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            
+            <img src="https://dummyimage.com/250x250/767878/fff" class="img-fluid mb-4" alt=""
+              data-wow-delay="0.1s">
+    
+            <img src="https://dummyimage.com/250x250/767878/fff" class="img-fluid mb-4" alt=""
+              data-wow-delay="0.4s">
+    
+          </div>
+          <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+    
+            <img src="https://dummyimage.com/250x250/767878/fff" class="img-fluid mb-4" alt=""
+              data-wow-delay="0.2s">
+    
+            <img src="https://dummyimage.com/250x250/767878/fff" class="img-fluid mb-4" alt=""
+              data-wow-delay="0.5s">
+    
+          </div>
+          <!--Grid column-->
+    
         </div>
         <button type="button" class="btn btn-outline-primary">
           See More
