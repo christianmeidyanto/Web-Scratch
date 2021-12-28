@@ -118,11 +118,12 @@
     white-space:nowrap
     } 
     #btn-back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-}
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        z-index:99999;
+      }
     </style>
     <link
     rel="icon"
@@ -497,14 +498,14 @@
 
     <!-- Footer -->
     <footer>
-      <div class="container-fluid bg-primary text-center text-white p-5">
+      <div class="container-fluid bg-light text-center text-primary p-5">
         Copyright © PT SAKU MAS JAYA - Flexible Packaging Manufacture. All Right
         Reserved.
       </div>
     </footer>
     <button
     type="button"
-    class="btn btn-danger btn-lg"
+    class="btn btn-outline-primary btn-lg rounded-circle"
     id="btn-back-to-top"
       >
     <i class="fas fa-arrow-up"></i>
@@ -516,6 +517,6 @@
     ></script>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
 </html>

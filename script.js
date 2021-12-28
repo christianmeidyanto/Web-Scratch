@@ -76,8 +76,10 @@ $(document).ready(function () {
       $('.card-title').css('font-size', '15px');
       if (position <= 250) {
         $('#nav').addClass('d-none');
+        mybutton.style.display = 'none';
       } else if (position > 250) {
         $('#nav').removeClass('d-none');
+        mybutton.style.display = 'block';
       }
     }
   });
