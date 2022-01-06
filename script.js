@@ -166,6 +166,9 @@ $(document).ready(function () {
     autoplay: true,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
+    lazyLoad: true,
+    center: true,
+    animateOut: 'fadeOut',
     responsiveClass: true,
     responsive: {
       0: {
@@ -182,6 +185,7 @@ $(document).ready(function () {
       },
     },
   });
+
   play();
 });
 
