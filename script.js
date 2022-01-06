@@ -171,6 +171,9 @@ $(document).ready(function () {
     stopOnHover:true,
     animateOut: 'fadeOut',
     responsiveClass: true,
+    navigationText: ["Left","Right"],
+     rewindNav : true,
+    scrollPerPage : true,
     responsive: {
       0: {
         items: 1,
