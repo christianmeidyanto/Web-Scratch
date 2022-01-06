@@ -168,6 +168,7 @@ $(document).ready(function () {
     autoplayHoverPause: true,
     lazyLoad: true,
     center: true,
+    stopOnHover:true,
     animateOut: 'fadeOut',
     responsiveClass: true,
     responsive: {
