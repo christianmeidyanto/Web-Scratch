@@ -168,24 +168,24 @@ $(document).ready(function () {
     autoplayHoverPause: true,
     lazyLoad: true,
     center: true,
-    stopOnHover:true,
+    mouseDrag: true,
+    stopOnHover: true,
     animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
     responsiveClass: true,
-    navigationText: ["Left","Right"],
-     rewindNav : true,
-    scrollPerPage : true,
+    navText: [
+      "<div class='nav-button owl-prev'>‹</div>",
+      "<div class='nav-button owl-next'>›</div>",
+    ],
     responsive: {
       0: {
         items: 1,
-        nav: true,
       },
       600: {
         items: 3,
-        nav: false,
       },
       1000: {
         items: 5,
-        nav: true,
       },
     },
   });
