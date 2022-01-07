@@ -16,10 +16,10 @@ $(document).ready(function () {
     var widthwindow = $(window).width();
 
     if (widthwindow >= 1200) {
-      if (position <= 600) {
+      if (position <= 500) {
         $('#nav').addClass('d-none');
         mybutton.style.display = 'none';
-      } else if (position > 600) {
+      } else if (position > 500) {
         $('#nav').removeClass('d-none');
       } else if (position > 900) {
         $('.owl-carousel').animated({ opacity: '0.4' }, 'slow');

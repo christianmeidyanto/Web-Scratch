@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+      @media (min-width: 0px) {
+        p {
+          margin-top: 4rem;
+          font-size: 0.9rem;
+        }
+        .text-about {
+          padding-top: 12px;
+          text-align: center;
+        }
+        .pc {
+          margin-top: 5rem;
+        }
+        .info {
+          margin-top: 1rem;
+        }
+        .text {
+          text-align: left;
+        }
+        .card {
+          height: 100px;
+          overflow: hidden;
+        }
+        #gallery {
+          text-align: center;
+        }
+        #gallery h4 {
+          text-align: left;
+        }
+        /* .carousel .slide{
+            height:100vmax;
+        } */
+      }
+      @media (min-width: 1000px) {
+        .text {
+          text-align: left;
+        }
+        .img-thumbnail {
+          margin-left: 10vw;
+        }
+      }
+      @media (min-width: 1200px) {
+        .img-thumbnail {
+          margin-left: 0;
+        }
+        p {
+          margin-top: 4rem;
+          font-size: 0.9rem;
+        }
+        .text-about {
+          text-align: left;
+        }
+        .pc {
+          margin-top: -0.5rem;
+        }
+        .info {
+          margin-top: 1rem;
+        }
+        .text {
+          text-align: right;
+        }
+      }
+      .fade {
+        margin-top: 10px;
+        transition: 10s fade-in;
+      }
+
+      .img-hover-zoom {
+        height: 250px;
+        overflow: hidden;
+      }
+
+      .img-hover-zoom img {
+        transition: transform 0.5s ease;
+      }
+
+      .img-hover-zoom:hover img {
+        transform: scale(1.5);
+      }
+
+      .wrapper {
+        background: #efefef;
+        box-shadow: 1px 1px 10px #999;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        margin-bottom: 20px !important;
+        width: 100%;
+        padding: 5px;
+      }
+      .scrolls {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 13rem;
+        white-space: nowrap;
+      }
+      #btn-back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        z-index: 99999;
+      }
+    </style>
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNqDi16lru2xnQaN_z9bgXK_Osl963-UKYq2K6&s=0"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+    <title>Web Scratch PT SAKU MAS JAYA</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="0">
+    <!-- Header -->
+    <header id="home">
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-primary bg-light fixed-top"
+        id="nav"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNqDi16lru2xnQaN_z9bgXK_Osl963-UKYq2K6&s=0"
+              alt=""
+              style="width: 50px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#product">Product</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="gallery">
+      <div class="container my-1 p-5">
+        <br />
+        <h4 class="my-5">Gallery</h4>
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4">
+            <img
+              src="https://dummyimage.com/300x300/767878/fff"
+              class="img-fluid mb-4"
+              alt=""
+            />
+
+            <img
+              src="https://dummyimage.com/300x300/767878/fff"
+              class="img-fluid mb-4"
+              alt=""
+              data-wow-delay="0.3s"
+            />
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <img
+              src="https://dummyimage.com/300x300/767878/fff"
+              class="img-fluid mb-4"
+              alt=""
+              data-wow-delay="0.1s"
+            />
+
+            <img
+              src="https://dummyimage.com/300x300/767878/fff"
+              class="img-fluid mb-4"
+              alt=""
+              data-wow-delay="0.4s"
+            />
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <img
+              src="https://dummyimage.com/300x300/767878/fff"
+              class="img-fluid mb-4"
+              alt=""
+              data-wow-delay="0.2s"
+            />
+
+            <img
+              src="https://dummyimage.com/300x300/767878/fff"
+              class="img-fluid mb-4"
+              alt=""
+              data-wow-delay="0.5s"
+            />
+          </div>
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4">
+            <img
+              src="https://dummyimage.com/300x300/767878/fff"
+              class="img-fluid mb-4"
+              alt=""
+            />
+
+            <img
+              src="https://dummyimage.com/300x300/767878/fff"
+              class="img-fluid mb-4"
+              alt=""
+              data-wow-delay="0.3s"
+            />
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <img
+              src="https://dummyimage.com/300x300/767878/fff"
+              class="img-fluid mb-4"
+              alt=""
+              data-wow-delay="0.1s"
+            />
+
+            <img
+              src="https://dummyimage.com/300x300/767878/fff"
+              class="img-fluid mb-4"
+              alt=""
+              data-wow-delay="0.4s"
+            />
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <img
+              src="https://dummyimage.com/300x300/767878/fff"
+              class="img-fluid mb-4"
+              alt=""
+              data-wow-delay="0.2s"
+            />
+
+            <img
+              src="https://dummyimage.com/300x300/767878/fff"
+              class="img-fluid mb-4"
+              alt=""
+              data-wow-delay="0.5s"
+            />
+          </div>
+
+          <!--Grid column-->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid bg-light text-center text-primary p-5">
+        Copyright © PT SAKU MAS JAYA - Flexible Packaging Manufacture. All Right
+        Reserved.
+      </div>
+    </footer>
+    <button
+      type="button"
+      class="btn btn-primary btn-lg rounded-circle"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <!-- <script src="script.js"></script> -->
+</html>
