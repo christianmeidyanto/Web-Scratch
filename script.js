@@ -48,19 +48,26 @@ $(document).ready(function () {
         .removeClass('col-xl-5 col-lg-5 col-md-5 col-sm-5')
         .addClass('col-xl-12 col-lg-12 col-md-12 col-sm-12');
     } else if (widthwindow >= 768) {
-      if (position <= 380) {
+      if (position <= 250) {
         $('#nav').addClass('d-none');
         mybutton.style.display = 'none';
-      } else if (position > 380) {
+      } else if (position > 250) {
         $('#nav').removeClass('d-none');
         mybutton.style.display = 'block';
       }
+      $('#info1')
+        .removeClass('col-xl-7 col-lg-7 col-md-7 col-sm-7')
+        .addClass('col-xl-6 col-lg-6 col-md-6 col-sm-6');
+      $('#info2')
+        .removeClass('col-xl-5 col-lg-5 col-md-5 col-sm-5')
+        .addClass('col-xl-6 col-lg-6 col-md-6 col-sm-6');
+      $('#info2').css('margin-top', '-30px');
     } else if (widthwindow >= 576) {
       $('.card-img-top').css('width', '100px');
-      if (position <= 300) {
+      if (position <= 180) {
         $('#nav').addClass('d-none');
         mybutton.style.display = 'none';
-      } else if (position > 300) {
+      } else if (position > 180) {
         $('#nav').removeClass('d-none');
         mybutton.style.display = 'block';
       }
@@ -74,10 +81,10 @@ $(document).ready(function () {
       $('.card-img-top').css('width', '100%');
       $('.card-product').css('width', '100%');
       $('.card-title').css('font-size', '15px');
-      if (position <= 250) {
+      if (position <= 180) {
         $('#nav').addClass('d-none');
         mybutton.style.display = 'none';
-      } else if (position > 250) {
+      } else if (position > 180) {
         $('#nav').removeClass('d-none');
         mybutton.style.display = 'block';
       }
