@@ -33,6 +33,8 @@ $(document).ready(function () {
       $('#info2')
         .removeClass('col-xl-12 col-lg-12 col-md-12 col-sm-12')
         .addClass('col-xl-5 col-lg-5 col-md-5 col-sm-5');
+
+      $('#info2').css('margin-top', '0px');
     } else if (widthwindow >= 992) {
       if (position <= 450) {
         $('#nav').addClass('d-none');
@@ -47,6 +49,7 @@ $(document).ready(function () {
       $('#info2')
         .removeClass('col-xl-5 col-lg-5 col-md-5 col-sm-5')
         .addClass('col-xl-12 col-lg-12 col-md-12 col-sm-12');
+      $('#info2').css('margin-top', '0px');
     } else if (widthwindow >= 768) {
       if (position <= 250) {
         $('#nav').addClass('d-none');
@@ -77,6 +80,8 @@ $(document).ready(function () {
       $('#info2')
         .removeClass('col-xl-5 col-lg-5 col-md-5 col-sm-5')
         .addClass('col-xl-12 col-lg-12 col-md-12 col-sm-12');
+      $('#info2').css('margin-top', '0px');
+      $('#info2').css('margin-top', '0');
     } else if (widthwindow < 576) {
       $('.card-img-top').css('width', '100%');
       $('.card-product').css('width', '100%');
