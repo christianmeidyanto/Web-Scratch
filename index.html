@@ -26,6 +26,9 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+      *{
+        font-family: 'Poppins', sans-serif;
+      }
       @media (min-width: 0px) {
         p {
           margin-top: 4rem;
@@ -144,7 +147,7 @@
   <body data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="0">
 
     <!-- Header -->
-    <header id="home">
+    <header id="home" class="mb-5">
       <!-- Slider Carousel -->
       <div
         id="carouselExampleCaptions"
@@ -266,7 +269,6 @@
               <a class="nav-link" aria-current="page" href="#">Home</a>
               <a class="nav-link" href="#about">About</a>
               <a class="nav-link" href="#product">Product</a>
-              <a class="nav-link" href="#gallery">Gallery</a>
               <a class="nav-link" href="#contact">Contact</a>
             </div>
           </div>
@@ -276,7 +278,7 @@
 
     <!-- Section About -->
     <section id="about">
-      <div class="container"><br><br>
+      <div class="container p-5"><br><br>
         <div class="row">
             <div class="col-xl-6">
             <img
@@ -324,66 +326,24 @@
         <br><br>
         <h4 class="my-5">Product</h4>
         <div class="owl-carousel">
-          <a href=""><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
-          <a href=""><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
-          <a href=""><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
-          <a href=""><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
-          <a href=""><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
-          <a href=""><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
+          <a href="detailproduct.html?names=dum01" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 1">
+            <img src="https://dummyimage.com/190x190/767878/fff" alt="">
+          </a>
+          <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 2"><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
+          <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 3"><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
+          <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 4"><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
+          <a href data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 5"><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
+          <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 6"><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
         </div>
       
       </div>        
     </section>
 
+    <!-- <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
+    <button class="btn btn-primary" type="button" disabled>Disabled button</button>
+  </span> -->
     <!-- Section Gallery -->
-    <section id="gallery">
-      <div class="container my-5 p-5">
-        <br/>
-        <h4 class="my-5">Gallery</h4>
-        <div class="row">
 
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-12 mb-4">
-    
-            <img src="https://dummyimage.com/300x300/767878/fff" class="img-fluid mb-4" alt="">
-    
-            <img src="https://dummyimage.com/300x300/767878/fff" class="img-fluid mb-4" alt=""
-              data-wow-delay="0.3s">
-    
-          </div>
-          <!--Grid column-->
-    
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-6 mb-4">
-            
-            <img src="https://dummyimage.com/300x300/767878/fff" class="img-fluid mb-4" alt=""
-              data-wow-delay="0.1s">
-    
-            <img src="https://dummyimage.com/300x300/767878/fff" class="img-fluid mb-4" alt=""
-              data-wow-delay="0.4s">
-    
-          </div>
-          <!--Grid column-->
-    
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-6 mb-4">
-    
-            <img src="https://dummyimage.com/300x300/767878/fff" class="img-fluid mb-4" alt=""
-              data-wow-delay="0.2s">
-    
-            <img src="https://dummyimage.com/300x300/767878/fff" class="img-fluid mb-4" alt=""
-              data-wow-delay="0.5s">
-    
-          </div>
-          <!--Grid column-->
-    
-        </div>
-        
-        <a href="gallery.html"  class="btn btn-outline-primary">
-        See More
-      </a>
-      </div>
-    </section>
 
     <!-- Section Contact -->
     <section id="contact">
