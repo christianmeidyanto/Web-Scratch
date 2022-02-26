@@ -13,9 +13,9 @@
       crossorigin="anonymous"
     />
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
     <link
       rel="stylesheet"
@@ -269,7 +269,6 @@
             <div class="navbar-nav ms-auto mb-2 mb-lg-0">
               <a class="nav-link" aria-current="page" href="#">Home</a>
               <a class="nav-link" href="#about">About</a>
-              <a class="nav-link" href="#product">Product</a>
               <a class="nav-link" href="#contact">Contact</a>
             </div>
           </div>
@@ -320,40 +319,65 @@
       </div>
     </section>
     
-    <!-- Section Product -->
-    <section id="product">
-      <!-- <img src="https://dummyimage.com/200x200/767878/fff" alt="" /> -->
-      <div class="container p-5">
-        <br><br>
-        <h4 class="my-5">Product</h4>
-        <div class="owl-carousel">
-          <a href="detailproduct.html?names=dum01" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 1">
-            <img src="https://dummyimage.com/190x190/767878/fff" alt="">
-          </a>
-          <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 2"><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
-          <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 3"><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
-          <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 4"><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
-          <a href data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 5"><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
-          <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Dummy 6"><img src="https://dummyimage.com/190x190/767878/fff" alt=""></a>
-        </div>
-      
-      </div>        
-    </section>
-
-    <!-- <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
-    <button class="btn btn-primary" type="button" disabled>Disabled button</button>
-  </span> -->
     <!-- Section Gallery -->
 
+    <section id="gallery">
+      <div class="container p-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+              <img
+            src="https://dummyimage.com/400x350/767878/fff"
+              class="img-fluid"
+              alt="..."
+              />
+          </div>
+          <div class="col">
+              <img
+            src="https://dummyimage.com/400x350/767878/fff"
+              class="img-fluid"
+              alt="..."
+              />
+          </div>
+          <div class="col">
+              <img
+            src="https://dummyimage.com/400x350/767878/fff"
+              class="img-fluid"
+              alt="..."
+              />
+          </div>
+          <div class="col">
+              <img
+            src="https://dummyimage.com/400x350/767878/fff"
+              class="img-fluid"
+              alt="..."
+              />
+          </div>
+          <div class="col">
+              <img
+            src="https://dummyimage.com/400x350/767878/fff"
+              class="img-fluid"
+              alt="..."
+              />
+          </div>
+          <div class="col">
+              <img
+            src="https://dummyimage.com/400x350/767878/fff"
+              class="img-fluid"
+              alt="..."
+              />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Section Contact -->
     <section id="contact">
       <div class="container p-5">
         <h4>Get <span class="text-info">Info</span></h4>
-        <div class="row">
-          <div class="col-xl-7 col-lg-67 col-md-7 col-sm-7 lh-lg info" id="info1">
+        <div class="row row-cols-1 row-cols-sm-2 g-5">
+          <div class="col" style="line-height:2.5rem;">
             Head Office <br />
-            Jl. Caringin No. 439M 
+            <a href="contact.html" class="text-dark text-decoration-none">Jl. Caringin No. 439M</a> 
             Kota Bandung <br />Jawa Barat 40224 <br />
             Phone:<br />&nbsp;021 - 5631528 - 29 <br />&nbsp;021 - 5656861 - 62
             <br />Fax: <br />&nbsp;021 - 5660 223  <br /><i
@@ -365,7 +389,7 @@
               >sakumas23@gmail.com</a
             >
           </div>
-          <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pc" id="info2">
+          <div class="col">
             <div class="mb-3">
               <h5 class="pb-4 text">Send Me Something</h4>
               <label for="exampleFormControlInput1" class="form-label"
@@ -457,8 +481,8 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-  </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="script.js"></script>
+  </body>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 </html>

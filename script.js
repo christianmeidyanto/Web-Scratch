@@ -97,50 +97,7 @@ $(document).ready(function () {
   });
 });
 
-// Back To Top
-function backTotop() {
-  window.scroll(0, 0);
-}
 
-$(document).ready(function () {
-  var owl = $('.owl-carousel');
-  owl.owlCarousel({
-    items: 4,
-    loop: true,
-    margin: 10,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    lazyLoad: true,
-    center: true,
-    mouseDrag: true,
-    stopOnHover: true,
-    animateOut: 'fadeOut',
-    animateIn: 'fadeIn',
-    responsiveClass: true,
-    navText: [
-      "<div class='nav-button owl-prev'>‹</div>",
-      "<div class='nav-button owl-next'>›</div>",
-    ],
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 3,
-      },
-      1000: {
-        items: 5,
-      },
-    },
-  });
-
-  play();
-});
-
-function play() {
-  owl.trigger('play.owl.autoplay', [1000]);
-}
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
